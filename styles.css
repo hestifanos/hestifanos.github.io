@@ -74,7 +74,9 @@ ul li {
     header {
         padding: 10px;
     }
-
+    nav {
+        height: auto; 
+    }
     nav ul li {
         display: block;
         margin: 0;
