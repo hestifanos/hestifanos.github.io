@@ -3,39 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - HERMON ESTIFANOS</title>
+    <title>Home - Hermon Estifanos</title>
     <link rel="stylesheet" href="styles.css">
-
-    <style> 
-        body {
-         background-image: url('home.jpg');
-         background-size: cover;
-         background-position: center;
-         color: aliceblue;
-         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-         font-style: normal;
-          } 
-       </style>
 </head>
-<body>
+<body class="home-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <h1>Welcome to My Software Engineering Portfolio</h1>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact</a></li>
-
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <section>
             <h2>Hello There</h2>
-            <p>Welcome to my website! I'm a student majoring in software engineering. 
-                <p>I love making cool stuff with computers to make a difference.</p>
-            <p>Check out my projects! They're like little adventures I've been on.</p> 
+            <p>Welcome to my website! I'm a student majoring in software engineering.</p>
+            <p>I love making cool stuff with computers to make a difference.</p>
+            <p>Check out my projects! They're like little adventures I've been on.</p>
             <p>Feel free to say hi and chat with me. Let's make something awesome together!</p>
         </section>
     </main>

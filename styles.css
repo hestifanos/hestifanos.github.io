@@ -9,12 +9,32 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ADD8E6;
+    background-color: #1d2733;
     color: #333;
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+.home-page { background-image: linear-gradient(#101820aa, #101820aa), url("home.jpg"); }
+.about-page { background-image: linear-gradient(#101820aa, #101820aa), url("aboutMe.jpg"); }
+.projects-page { background-image: linear-gradient(#101820aa, #101820aa), url("projects.jpg"); }
+.contact-page { background-image: linear-gradient(#101820aa, #101820aa), url("contactMe.jpg"); }
+
+.skip-link {
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+    z-index: 1;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    color: #111;
+}
+
+.skip-link:focus { top: 1rem; }
 
 header {
     background-color: #333;
@@ -27,7 +47,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 nav ul li {
@@ -45,9 +65,17 @@ nav ul li a:hover {
     color: #ccc;
 }
 
+nav ul li a:focus-visible,
+main a:focus-visible {
+    outline: 3px solid #ffd166;
+    outline-offset: 3px;
+}
+
 main {
     flex: 1; /* Allows main content to take up remaining space */
     padding: 20px;
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
 }
 
 footer {
@@ -82,7 +110,7 @@ ul li {
     }
 
     nav ul {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         margin-bottom: 10px;
     }
@@ -93,4 +121,3 @@ ul li {
         margin-bottom: 10px;
     }
 }
-
